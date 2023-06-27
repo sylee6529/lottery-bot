@@ -117,6 +117,7 @@ class Lotto645:
         soup = BS(
             html, "html5lib"
         )
+        print("@@test, requirements before page parsing", html)
         draw_date = soup.find("input", id="ROUND_DRAW_DATE").get('value')
         tlmt_date = soup.find("input", id="WAMT_PAY_TLMT_END_DT").get('value')
 

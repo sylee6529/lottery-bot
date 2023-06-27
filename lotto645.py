@@ -158,6 +158,7 @@ class Lotto645:
             data=data,
         )
         res.encoding = "utf-8"
+	print("ptest)) try_buy", res)
         return json.loads(res.text)
 
     def check_winning(self, auth_ctrl: auth.AuthController) -> dict:
